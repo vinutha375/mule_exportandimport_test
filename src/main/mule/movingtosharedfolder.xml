@@ -10,5 +10,6 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	<flow name="movingtosharedfolderFlow" doc:id="47ae196d-d680-4ce2-83b4-7da3d4f156ae" >
 		<http:listener doc:name="Listener" doc:id="d71c1e5e-6e33-46bf-b5a0-6915704daf2f" config-ref="HTTP_Listener_config" path="gitt"/>
 		<logger level="INFO" doc:name="Logger" doc:id="db410900-72e9-428f-a590-50fe612e6773" message="logger output"/>
+		<logger level="INFO" doc:name="Logger" doc:id="8338b83e-016b-4c6c-b0ea-01f1487b9805" message="#[payload.num1]"/>
 	</flow>
 </mule>
